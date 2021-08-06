@@ -4,7 +4,6 @@ const Users = ({data, setData}) => {
     const {users} = data;
 
     const handleDelete = ({role, firstName, lastName})=> {
-
         const newData = users.filter((item)=> {
             if (item.firstName != firstName && item.lastName != lastName ) {
                 if (item.role != role) {
@@ -18,6 +17,7 @@ const Users = ({data, setData}) => {
         // console.log({users: [...newData]});
         setData({users: newData});
     }
+    
     return (
         <>
             {
