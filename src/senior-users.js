@@ -8,7 +8,7 @@ const SeniorUsers = ({data, setData}) => {
                 users.filter((item)=> item.role === 2).map((item, index)=> {
                     const {role, firstName, lastName} = item;
                     return (
-                <tr>
+                <tr key={index}>
             <th scope="row">{index}</th>
             <td>{firstName}</td>
             <td>{lastName}</td>

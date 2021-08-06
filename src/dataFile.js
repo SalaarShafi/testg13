@@ -2,6 +2,11 @@ const dataFile = {
     "users": [
         {
             "role": 1,
+            "firstName": "ark",
+            "lastName": "tto"
+        },
+        {
+            "role": 1,
             "firstName": "Mark",
             "lastName": "Otto"
         },

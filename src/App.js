@@ -15,7 +15,7 @@ import AddData from './addData'
 function App() {
 
   const [data, setData] = useState(dataFile);
-console.log(dataFile);
+
   return (
     <>
     {/* <!-- navbar area, for filter input--> */}
