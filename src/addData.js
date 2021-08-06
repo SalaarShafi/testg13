@@ -7,7 +7,9 @@ const AddData = ({data, setData}) => {
     const [addRole, setAddRole] = useState('');
 
     function handleSave() {
-        setData({users:[...data.users, {role: addRole, firstName: addFirstName, lastName: addSecondName}]})
+        if (addFirstName && addSecondName && addRole) {
+            setData({users:[...data.users, {role: addRole, firstName: addFirstName, lastName: addSecondName}]})
+        }
     }
 
     function handleSelect(e) {
